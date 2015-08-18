@@ -67,10 +67,3 @@ defmodule Eagle do
       end
   end
 end
-
-Eagle.start_link
-Eagle.add "title1", "This is a content."
-Eagle.add "title2", "This is another content."
-IO.puts inspect Eagle.search "title1"
-IO.puts inspect Eagle.search "another"
-IO.puts inspect Eagle.search "This is"
